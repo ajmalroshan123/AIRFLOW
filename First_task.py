@@ -12,4 +12,7 @@ with DAG(
   start_date = datetime(2024,2,25)
 ) as dag
 
-first_task = 
+first_task = pythonOperator(
+  task_id = 'first_task',
+  python_callable = my_first_task
+)
