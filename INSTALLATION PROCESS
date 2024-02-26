@@ -1,0 +1,9 @@
+Install Apache Airflow if you haven't already. You can install it via pip:
+pip install apache-airflow
+
+Step 2: Initialize the Airflow database (SQLite by default):
+airflow db init
+
+Step 3: Start the Airflow webserver and scheduler:
+airflow webserver --port 8080
+airflow scheduler
